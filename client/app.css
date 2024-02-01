@@ -1,0 +1,209 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+	height: 100vh;
+    width: 100vw;
+    background: linear-gradient(231deg, rgb(162, 88, 245) 0%, rgba(52, 28, 79, 1) 50%, rgba(88, 7, 125, 1) 100%);
+    overflow: hidden;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container{
+    width:50%;
+}
+
+.heading{
+
+    color: rgb(255, 255, 255,0.7);
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align :center;
+    
+}
+
+.input_container{
+	width : 60%;
+	margin: auto;
+}
+
+h2{
+	color:#fff;
+}
+.switch-field {
+	display: flex;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-top: -20px;
+	overflow: hidden;
+	
+}
+
+.switch-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 2px;
+	overflow: hidden;
+}
+
+.switch-field label {
+	background-color: #01dafb;
+	color: rgb(0, 0, 0);
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	margin-right: -1px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.2s ease-in-out;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.switch-field input:checked + label {
+	background-color: #3207f0;
+	box-shadow: none;
+	color: white;
+}
+
+.switch-field label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+	border-radius: 0 4px 4px 0;
+}
+
+.form {
+	max-width: 270px;
+	font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+	font-weight: normal;
+	line-height: 1.625;
+	margin: 8px auto;
+	padding-left: 16px;
+	z-index: 2;
+}
+
+
+.area{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #b4e3f7;
+  width: 76%;
+  border: 0;
+  margin: -10px 0 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.location{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #b2ecff;
+  width: 76%;
+  border: 0;
+  margin: -20px 0 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+
+/* 
+.result{
+		background: #dcd686;
+		width: 76%;
+		border: 0;
+		margin: 25px 0 10px;
+		box-sizing: border-box;
+		font-size: 15px;
+		height: 35px;
+		text-align: center;
+} */
+
+
+
+
+
+.submit {
+	--c: #fff;
+	/* text color */
+	background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+	  #004dff;
+	/* background color */
+	color: #0000;
+	border: none;
+	transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+	text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+	  calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+	outline-offset: .1em;
+	transition: 0.3s;
+  }
+  
+  .submit:hover,
+  .submit:focus-visible {
+	--_p: 0%;
+	--_i: 1;
+  }
+  
+  .submit:active {
+	text-shadow: none;
+	color: var(--c);
+	box-shadow: inset 0 0 9e9q #0005;
+	transition: 0s;
+  }
+  
+  .submit {
+	width: 50%;
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin: 5% 15%;
+	cursor: pointer;
+	padding: .1em .3em;
+  }
+
+
+  .result {
+	--glow-color: rgb(217, 176, 255);
+	--glow-spread-color: rgba(191, 123, 255, 0.781);
+	--enhanced-glow-color: rgb(231, 206, 255);
+	--btn-color: rgb(100, 61, 136);
+
+	width: 20%;
+	margin-left: 30%;
+	border: .25em solid var(--glow-color);
+	padding: 1em 3em;
+	color: var(--glow-color);
+	font-size: 15px;
+	font-weight: bold;
+	background-color: var(--btn-color);
+	border-radius: 1em;
+	outline: none;
+	box-shadow: 0 0 1em .25em var(--glow-color),
+		  0 0 4em 1em var(--glow-spread-color),
+		  inset 0 0 .75em .25em var(--glow-color);
+	text-shadow: 0 0 .5em var(--glow-color);
+	transition: all 0.3s;
+	
+	}
+  
+  
+  .result:active {
+	box-shadow: 0 0 0.6em .25em var(--glow-color),
+		  0 0 2.5em 2em var(--glow-spread-color),
+		  inset 0 0 .5em .25em var(--glow-color);
+  }
